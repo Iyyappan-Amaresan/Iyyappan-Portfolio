@@ -1,0 +1,285 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.navbar
+{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(65, 65, 65);
+position: sticky;
+top: 0;
+}
+.navbar ul
+{
+display: flex;
+list-style: none;
+margin: 20px 0;
+}  
+.navbar ul
+{
+font-family: century;
+font-size: 17px;
+font-weight: bold;
+}
+.navbar ul li a
+{
+text-decoration: none;
+color: white;
+padding: 8px 25px;
+}
+.navbar ul li a:hover
+{
+background-color: white;
+color: black;
+box-shadow: 0 0 10px white;
+}   
+
+/* --------------Home section----------------- */
+
+#home
+{
+display: flex;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.5);
+height: 820px;
+align-items: center;
+
+}
+#home::before
+{
+content: "";
+position: absolute;
+top: 0;
+right: 0;
+background: url('./portfolio3.jpg') no-repeat center center/cover;
+height: 900px;
+width: 100%;
+z-index: -1;
+}
+.main
+{
+display: flex;
+flex-direction: column;
+margin-top: 100px;
+}
+.name
+{
+font-family: 'Montserrat', sans-serif;
+font-size: 50px;
+text-align: center;
+padding: 20px;
+color: white;
+}
+.subtitle
+{
+font-family: sans-serif;
+font-size: 20px;
+text-align: center;
+color: white;
+}
+#home a
+{
+width: 100px;
+height: 40px;   
+margin-left: 230px;
+margin-top: 20px;
+text-align: center;
+text-decoration: none;
+font-size: 18px;
+background-color: white;
+color: black;
+border-radius: 5px;
+font-weight: bold;
+
+}
+#home a:hover
+{
+    box-shadow: 0 0 5px white, 0 0 10px white;
+}
+
+/* --------------About section----------------- */
+
+#about
+{
+display: flex;
+flex-direction: column;
+background-color: rgb(234, 241, 234);
+}
+.pic
+{
+display: flex;
+}
+.pic img
+{
+width: 575px;
+height: 400px;
+padding: 10px;
+box-shadow:  0 0 10px black;
+}
+.headings
+{
+font-family: 'Bree Serif', serif;
+font-size: 50px;
+text-align: center;
+padding: 70px;
+color: black;
+}
+.intro
+{
+display: flex;
+flex-direction: column;
+padding: 10px;
+text-align: justify;
+font-size: 20px;
+}
+.intro p
+{
+line-height: 30px;
+}
+.intro h2
+{
+font-size: 35px;   
+margin-bottom: 20px;
+}
+.personal-info
+{
+margin-bottom: 25px;
+}
+.intro .experience p ul
+{
+display: flex;
+flex-direction: column;
+}
+ul
+{
+line-height: 40px;
+}
+span
+{
+font-weight: bold;
+}
+
+/* --------------Knowledge section----------------- */
+
+#knowledge
+{
+display: flex;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.9);
+padding: 20px;
+align-items: center;
+}
+.gallery
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+box-sizing: border-box;
+}
+.gallery img
+{
+height: 250px;
+width: 250px;
+margin: 10px;
+border: 1px solid black;
+box-shadow:  0 0 5px black;
+border-radius: 125px;
+}
+.topic
+{
+font-family: 'Montserrat', sans-serif;
+font-size: 50px;
+text-align: center;
+padding: 60px;
+color: white;
+}
+
+/* --------------Skills section----------------- */
+
+#skills
+{
+display: flex;
+flex-direction: column;
+padding: 20px;
+background-color: rgb(234, 241, 234);
+}
+#skills .topic
+{
+color: black;
+}
+.row
+{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+.box
+{
+display: flex;
+flex-direction: column;
+width: 350px;
+height: 450px;
+border: 1px solid black;
+margin: 10px;
+align-items: center;
+text-align: justify;
+padding: 20px;
+font-size: 20px;
+border-radius: 15px;
+background: linear-gradient(to top, rgba(255,45,55) 50%, white 50%);
+background-size: 100% 200%;
+transition: all 0.8s;
+}
+.box:hover
+{
+background-position: left bottom;
+}
+
+/* --------------Footer section----------------- */
+
+footer a
+{
+padding: 10px;
+color: black;
+margin: 10px 20px;
+text-decoration: none;
+background-color: white;
+border-radius: 5px;
+font-size: 20px;
+}
+footer a:hover
+{
+box-shadow: 0 0 10px white;
+}
+footer h2
+{
+color: white;
+font-size: 35px;
+}
+.footer-link
+{
+padding: 20px;
+}
+.copyright
+{
+color: white;
+}
+footer
+{
+display: flex;
+flex-direction: column;
+background-color: rgba(0, 0, 0, 0.9);
+text-align: center;
+}
+footer p
+{
+font-size: small;
+}
